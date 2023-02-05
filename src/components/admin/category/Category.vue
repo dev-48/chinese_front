@@ -140,9 +140,7 @@
                 <tr v-for="(cate, key) in categoryList" v-bind:key="key" class="category_tr">
                   <div class="category__data-container">
                       <td class="user_list__id-th admin__td">{{key}}</td>
-                      <td class="user_list__id-th admin__td">
                         <a class="admin__td category_th" v-on:click="viewCataContent(key)">{{cate.ru}}</a>
-                      </td>
                       <td class="admin__td datetime_row">{{cate.date_create}}</td>
                       <div class="admin__change-btn">
                         <td>
@@ -182,26 +180,6 @@
               <label class="admin__label">Название на казахском</label>
               <p class="right-block__name-category admin_text">{{kz_text}}</p>
             </div>
-            <tr class="category_tr">
-              <div class="category__data-container">
-                <td class="user_list__id-th admin__td">1</td>
-                <a class="admin__td category_th">Категория и  ее очень длинное название =</a>
-                <td class="admin__td datetime_row">20.12.2023</td>
-                <div class="admin__change-btn">
-                  <td>
-                    <button class="change-btn">
-                      <img src="@/assets/icons/icons8-edit-50.png">
-                    </button>
-                  </td>
-
-                  <td>
-                    <button class="change-btn">
-                      <img src="@/assets/icons/icons8-trash-64.png">
-                    </button>
-                  </td>
-                </div>
-              </div>
-            </tr>
           </div>
         </div>
       </Transition>
@@ -232,7 +210,7 @@
     height: 40px;
     vertical-align: middle;
     display: flex;
-    margin-top: 5%;
+    height: auto;
   }
 
   .content-block_content{
@@ -274,6 +252,7 @@
   .category__right-block{
     width: 35%;
     height: 450px;
+    padding: 10px;
   }
 
   .category__right-block,
@@ -296,8 +275,7 @@
 
   .category_th{
     width: 50%;
-    word-break: break-all;
-    height: 50px;
+    word-break: break-word;
   }
 
   .right-block__name-category{
@@ -336,7 +314,4 @@
 </style>
 
 <style scoped>
-.admin__table {
-  max-height: 100%;
-}
 </style>

@@ -158,3 +158,8 @@
     margin-top: 25px;
   }
 </style>
+<style scoped>
+.admin__error-message {
+  filter: contrast(2);
+}
+</style>
