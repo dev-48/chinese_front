@@ -1,0 +1,282 @@
+:root{
+  --bgc: #27293D;
+}
+
+
+.admin_text{
+  color: #D2D2D6;
+  font-family: 'Montserrat';
+}
+
+
+.admin__h1{
+  font-size: 17px;
+}
+
+.admin__h4{
+  color: #D2D2D6;
+  font-family: 'Montserrat';
+  font-size: 11px;
+}
+
+
+.admin__label{
+  display: block;
+  color: hsla(0,0%,100%,.6);
+  font-size: 15px;
+  margin-bottom: 15px;
+  cursor: default;
+}
+
+  .admin__button{
+    height: calc(2rem + 2px);
+    color: white;
+    background-color: #E14ECB;
+    padding: 0px 15px 0 15px;
+    border: 1px solid #2b3553;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: background-color 0.3s,;
+  }
+
+  .change-btn:hover,
+  .admin__button:hover{
+    background-color: #E174D1;
+  }
+
+  .admin__select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: white;
+    width: 50%;
+    border-color: #2b3553;
+    height: calc(1.9rem);
+    border-radius: 6px;
+    padding-left: 15px;
+    transition: color .3s ease-in-out,border-color .3s;
+    font-size: 15px;
+  }
+
+
+  .admin__select:active{
+    border: 1px solid #2b3553;
+  }
+
+  .admin__option{
+    background-color: #2b3553;
+    font-size: 15px;
+  }
+
+
+  .admin__error{
+    margin: 25px 0 25px 0;
+    width: 50%;
+  }
+
+  .admin__error-message{
+    color: red;
+    font-size: 15px;
+    font-family: 'Montserrat';
+  }
+
+
+  .admin__input{
+      width: 100%;
+      display: block;
+      height: calc(2rem + 2px);
+      padding: 0.375rem 0.75rem;
+      border: 1px solid #2b3553;
+      border-radius: 6px;
+
+
+      border-radius: 0.4285rem;
+      font-size: .75rem;
+      transition: color .3s ease-in-out,border-color .3s ease-in-out,background-color .3s ease-in-out;
+      color: white;
+  }
+
+  .admin__select:active, .admin__select:focus{
+    outline:none
+  }
+
+
+  .admin__select:focus{
+    border-color: #E14ECB
+  }
+
+
+  .admin__input:focus{
+    border-color: #E14ECB
+  }
+
+  .admin__table{
+    width: 100%;
+    color: hsla(0,0%,100%,.6);
+    text-align: left;
+  }
+
+  .admin__th{
+    padding-right: 25px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-family: 'Montserrat';
+  }
+
+  .admin__td{
+    padding-right: 35px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px
+  }
+
+
+  .admin-dell-enter-active,
+  .admin-dell-leave-active {
+    transition: all .3s;
+  }
+
+  .admin-dell-enter-from,
+  .admin-dell-leave-to {
+    opacity: 0;
+  }
+
+
+  .user_list__id-th{
+    width: 70px;
+  }
+
+
+  .admin__file{
+   position: relative;
+   display: inline-block;
+  }
+
+  .admin__file span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: middle;
+    color: rgb(255 255 255);
+    text-align: center;
+    border-radius: 6px;
+    background-color: #E14ECB;
+    line-height: 22px;
+    height: 40px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: E14ECB;
+    margin: 0;
+    transition: background-color 0.3s;
+  }
+
+
+.admin__file input[type=file] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+
+.admin__file:hover span {
+  background-color: #E174D1;
+}
+
+.admin__file:active span {
+  background-color: #E174D1;
+}
+
+
+.admin__file input[type=file]:disabled + span {
+  background-color: #eee;
+}
+
+
+.change-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E14ECB;
+  border: none;
+  border-radius: 6px;
+  padding: 5px;
+  transition: background-color 0.3s,;
+}
+
+.change-btn img{
+  width: 18px;
+  height: 18px;
+}
+
+.change-btn span{
+  color: white;
+  margin-left: 7px;
+}
+
+
+.admin__change-btn{
+  margin-left: 5%;
+}
+
+
+.radio__checkbox {
+    display: inline-block;
+}
+
+.radio__checkbox-input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.radio__checkbox-inner {
+    display: inline-block;
+    position: relative;
+    width: 38px;
+    height: 20px;
+    top: 2.5px;
+}
+
+.radio__checkbox-inner:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 38px;
+    height: 20px;
+    background-color: #C0C0C0;
+    border-radius: 20px;
+    transition: background-color .3s;
+}
+
+.radio__checkbox-inner:after {
+    content: '';
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: background-color .3s, left .3s;
+}
+
+.radio__checkbox-input:checked + .radio__checkbox-inner:before {
+    background-color: #E14ECB;
+}
+
+.radio__checkbox-input:checked + .radio__checkbox-inner:after {
+    background-color: #fff;
+    left: 20px;
+}
