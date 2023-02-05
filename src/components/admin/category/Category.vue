@@ -284,18 +284,14 @@
   }
 
   .content-block__image-block{
-    position: relative;
-    width: 45%;
-    height: 45%;
+    width: 100%;
+    height: 100px;
     overflow: hidden;
     border-radius: 6px;
     margin-bottom: 10px
   }
 
   .category__right-block-image{
-    position: absolute;
-    top: 50%;
-    left: 50%;
     transform: translate(-50%, -50%);
     width: 100%;
     border-radius: 6px;
@@ -309,9 +305,6 @@
   .category__right-block-name{
     width: 100%;
     overflow: hidden;
-    margin-top: 15px;
   }
 </style>
 
-<style scoped>
-</style>
